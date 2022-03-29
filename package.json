@@ -1,5 +1,11 @@
 {
   "name": "testSite.github.io",
-  "packageManager": "yarn@3.2.0"
-
+  "packageManager": "yarn@3.2.0",
+  "scripts": {
+    "lite": "lite-server --port 10001",
+    "start": "npm run lite"
+  },
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
 }
