@@ -1,10 +1,92 @@
 <html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">  </head>
+  <nav>
  
+  </nav>
 <body>
-  <h1>This is the main page</h1>
-  <p>This is the sub headline for this page 
-  </p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
+  <div id="web">
+    <div class="sphere one" >
+      <span class="text past">Past</span>
+      <p class="blurb">Deep v forage Thundercats selfies, shabby chic chillwave food truck fashion axe PBR&amp;B Etsy flannel High Life beard skateboard. Mixtape skateboard quinoa viral, bicycle rights tote bag Neutra Wes Anderson gentrify Tonx. 
+       <br/><br/>
+       <a onclick="openModal()" style="cursor: pointer;">OPEN MODAL</a>
+      </p>
+    </div>
+    <div id="modal" class="modal" style="display: none;">
+      <ul class="circles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+</ul>
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <p>Some text in the Modal..</p>
+      </div>
+    
+    </div>
+
+    <div class="sphere two" >
+      <span class="text present">Present</span>
+       <p class="blurb">Deep v forage Thundercats selfies, shabby chic chillwave food truck fashion axe PBR&amp;B Etsy flannel High Life beard skateboard. Mixtape skateboard quinoa viral, bicycle rights tote bag Neutra Wes Anderson gentrify Tonx. </p>
+    </div>
+    <div class="sphere three" >
+      <span class="text future">Future</span>
+       <p class="blurb future">Deep v forage Thundercats selfies, shabby chic chillwave food truck fashion axe PBR&amp;B Etsy flannel High Life beard skateboard. Mixtape skateboard quinoa viral, bicycle rights tote bag Neutra Wes Anderson gentrify Tonx. </p>
+    </div>
+</div>
+ 
+
+  
 </body>
  
+
+
+
+<script>
+  var modal = document.getElementById("modal");
+
+function openModal() {
+  console.log('is triggering')
+  modal.style.display = "flex";
+}
+
+function closeModal() {
+  modal.style.display = "none";
+}
+
+window.onclick = function (event) {
+  if (event.target === modal) {
+    closeModal()
+  }
+};
+
+  </script>
+
+
+
+
 </html>
+
+
+
+
